@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <script src="jquery-2.1.4.js"></script>
+    <title>Welcome To Prime Mall</title>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel = "stylesheet" href ="https://.bootsrapcdn.com/font-awesome/4.5
+    0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+  </head>
+  <body>
+
+    <div class="content">
+     
+    </div>
+    <div class="loader-wrapper">
+      <h1 class="ani" style="color:white; letter-spacing: 1px; font-size:40px;"><span style="color: papayawhip;">Welcome to</span><span style="color: rgb(230, 190, 117);"> SortedGlobal</span></h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="responsive-search" id="rss">
+      <div class="closediv">
+        <i class="uil uil-times" onclick="closerss()"></i>
+      </div>
+      <div class="seachbox">
+        <form action="#">
+          <input type="text" placeholder="Search Product here" />
+          <button>
+            <i class="uil uil-search"></i>
+          </button>
+        </form>
+        <div class="location fadeup">
+          <input
+            type="text"
+            placeholder="Search category here"
+            id="locatin_search"
+            oninput="search_city()"
+          />
+          <ul>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">Mumbai</a>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">kolkata</a>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">delhi</a>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">chennai</a>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">west bengal</a>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <a href="" class="lcn-search">maharastra</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="top-header">
+        <div class="th">
+          <div class="logo" height="">
+            <a href="index.html">
+              <img src="assets/images/SortedGlobal (1).png" alt="" />
+            </a>
+          </div>
+          <div class="name">
+            Sorted Global    
+          </div>
+         
+          <div class="searchbox">
+            <span>
+              <i class="uil uil-create-dashboard" onclick="show_cat()"></i>
+              <i class="uil uil-angle-down icon__14" onclick="show_cat()"></i>
+            </span>
+            <form action="index.html" method="GET">
+              <input type="hidden" value="14" name="d" />
+              <input type="text" placeholder="Search Products" name="f" />
+              <button>
+                <i class="uil uil-search"></i>
+              </button>
+            </form>
+            <div class="location fadeup" id="ctcnpnl">
+              <input
+                type="text"
+                placeholder="Search here"
+                id="cat_search"
+                oninput="search_cat()"
+              />
+              <ul>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">electronics</a>
+                </li>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">food</a>
+                </li>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">home decoration</a>
+                </li>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">meal</a>
+                </li>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">new godds</a>
+                </li>
+                <li onclick="set(this)">
+                  <i class="uil uil-apps"></i>
+                  <a href="" class="cn-search">maharastra</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rightbox">
+            <ul>
+              <li>
+                <a href="" class="rightlink">
+                  <i class="uil uil-phone-alt"></i>
+                  +233-000-0000
+                </a>
+              </li>
+              
+              <li>
+                <a href="" class="rightlink">
+                  <i class="uil uil-question-circle"></i>
+                  Help
+                </a>
+              </li>
+              <li>
+                <a href="" class="rightlink wl">
+                  <i class="uil uil-heart icon_wishlist"></i>
+                  <span class="noti_count1">3</span>
+                </a>
+              </li>
+              <li class="user">
+                <a href="#" class="rightlink">
+                  <i class="uil uil-user-circle bg" onclick="show_userpanel()">
+                  </i>
+                </a>
+                <div class="userpanel fadeup" id="userpanel">
+                  <ul>
+                    <li>
+                      <i class="uil uil-chat-bubble-user"></i
+                      ><a href="">My Account</a>
+                    </li>
+                    <li><i class="uil uil-box"></i><a href="">My Orders</a></li>
+                    <li>
+                      <i class="uil uil-heart-alt"></i
+                      ><a href="">My Wishlist</a>
+                    </li>
+                    <li>
+                      <i class="uil uil-shopping-cart"></i
+                      ><a href="">My Cart</a>
+                    </li>
+                    <li>
+                      <i class="uil uil-wallet"></i><a href="">My Wallet</a>
+                    </li>
+                    <li>
+                      <i class="uil uil-map-marker-alt"></i
+                      ><a href="">My Address</a>
+                    </li>
+                    <li><i class="uil uil-signin"></i><a href="">Login</a></li>
+                    <li>
+                      <i class="uil uil-signout"></i><a href="">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="sub-header">
+          <div class="hamberger" onclick="sidebar()">
+            <i class="uil uil-bars"></i>
+          </div>
+
+          <nav>
+            
+          </nav>
+
+          <div class="cart-right">
+            <i class="uil uil-shopping-cart-alt"></i>Cart
+          </div>
+          <div class="srch" onclick="openrss()">
+            <i class="uil uil-search"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="slider" id="sidebar">
+      <ul>
+        <li class="flex flex-center"><a href=""> Home </a></li>
+        <li>
+          <span class="flex flex-center" onclick="expand(this)">
+            Cat 1
+            <i class="uil uil-angle-down icon__14"></i>
+          </span>
+          <ul class="inner-ul">
+            <li class="inner-li">fdg</li>
+            <li class="inner-li">fdg</li>
+            <li class="inner-li">fdg</li>
+          </ul>
+        </li>
+        <li>
+          <span class="flex flex-center" onclick="expand(this)">
+            Cat 1
+            <i class="uil uil-angle-down icon__14"></i>
+          </span>
+          <ul class="inner-ul">
+            <li class="inner-li">fdg</li>
+            <li class="inner-li">fdgg</li>
+            <li class="inner-li">fdg</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-banner-slider">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel owl-theme main-slider">
+           
+
+        <!--     <img src="assets/images/sample/offer-1.jpg" alt="banner" />
+              <div class="detail">
+                <h5>20% off</h5>
+                <h5>Get it now</h5>
+                <h5>lorem ispum</h5>
+              </div>
+            </div>
+          -->
+           
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <section class="defaultPadding mt4">
+      <div class="container mrlAuto">
+        <div class="heading">
+          <span>Shop By</span>
+          <h2>Categories</h2>
+        </div>
+        <div class="row mt3 ct-row">
+          <div class="owl-carousel owl-theme cate-slider">
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img">
+                  <img src="assets/images/svg/generic_edge_android_phone_device.svg" alt="" />
+                </div>
+                <h4>Phones</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img" >
+                  <img src="assets/images/svg/zager_Sedan_Car_silhouette.svg" alt=""  />
+                </div>
+                <h4>Cars</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img">
+                  <img src="assets/images/svg/maison2.svg" alt="" />
+                </div>
+                <h4>Home and Furniture</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img">
+                  <img src="assets/images/svg/Anonymous_Architetto_--_Camicia_in_seta.svg" alt="" />
+                </div>
+                <h4>Fashion</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img">
+                  <img src="assets/images/svg/Machovka_Microwave_oven_2.svg" alt="" />
+                </div>
+                <h4>Electonics</h4>
+              </a>
+            </div>
+            
+            <div class="item">
+              <a class="category-Item" href="">
+                <div class="cate-img">
+                  <img src="assets/images/svg/food-green.svg" alt="" />
+                </div>
+                <h4>Foods
+
+                </h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="defaultPadding mt4">
+      <div class="container mrlAuto">
+        <div class="heading">
+          <span>For You</span>
+          <h2>Phones</h2>
+        </div>
+        <div class="row mt3 ct-row">
+          <div class="owl-carousel owl-theme product-slider">
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/IP8G1239S_1.jpg" alt="product" />
+                  <div class="topOption">
+                    <!--<span class="offer">10% off</span>-->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                
+                  <h4>IPhone X</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                     <!-- <input type="button" value="-" class="minus minus-btn" />
+                      <input
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        class="qty-text"
+                      />
+                      <input type="button" value="+" class="plus plus-btn" />
+                     --> </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/sum.jpg" alt="product" />
+                  <div class="topOption">
+                     <!--<span class="offer">10% off</span>-->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Sumsung S21 Ultra</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                  <!--    <input type="button" value="-" class="minus minus-btn" />
+                      <input
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        class="qty-text"
+                      />
+                      <input type="button" value="+" class="plus plus-btn" />
+                  --> </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/pixel.png" alt="product" />
+                  <div class="topOption">
+                    <!--<span class="offer">10% off</span>-->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                 
+                  <h4>Google Pixel</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                      
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/S9.jpg" alt="product" />
+                  <div class="topOption">
+                   <!--<span class="offer">10% off</span>-->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                 
+                  <h4>Sumsung Galaxy S9</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                    
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    </section>
+   
+    <section class="defaultPadding mt4">
+      <div class="container mrlAuto">
+        <div class="heading">
+          <span>For You</span>
+          <h2>Food & Supplies</h2>
+        </div>
+        <div class="row mt3 ct-row">
+          <div class="owl-carousel owl-theme product-slider">
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/img-1.jpg" alt="product" />
+                  <div class="topOption">
+                    <!--<span class="offer">10% off</span> -->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                 <!-- <p>Available (In Stock)</p> -->
+                  <h4>Cabbages</h4>
+                  <div class="price">&#8373;100</div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                    
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/img-2.jpg" alt="product" />
+                  <div class="topOption">
+                 <!--   <span class="offer">10% off</span> -->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Strawberries</h4>
+                  <div class="price">&#8373;120</div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                     
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/img-3.jpg" alt="product" />
+                  <div class="topOption">
+                    <!-- <span class="offer">10% off</span> -->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                 
+                  <h4>Blueberries</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                      
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/img-2.jpg" alt="product" />
+                  <div class="topOption">
+                    <span class="offer">10% off</span>
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Strawberries</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                     
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/img-3.jpg" alt="product" />
+                  <div class="topOption">
+                    <span class="offer">10% off</span>
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  <p>Available (In Stock)</p>
+                  <h4>Product Tittle</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                   
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="defaultPadding mt4">
+      <div class="container mrlAuto">
+        <div class="heading">
+          <span>For You</span>
+          <h2>Fashion</h2>
+        </div>
+        <div class="row mt3 ct-row">
+          <div class="owl-carousel owl-theme product-slider">
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/Gucci.jpg" alt="product" />
+                  <div class="topOption">
+                   <!-- <span class="offer">10% off</span> -->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                 
+                  <h4>Gucci Bag</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                      
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/jor.jpg" alt="product" />
+                  <div class="topOption">
+                  <!--  <span class="offer">10% off</span -->
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Nike Air Jordans Retro High</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                      
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/hura.jpg" alt="product" />
+                  <div class="topOption">
+                   
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                
+                  <h4>Nike Hurache</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                   <!--   <input type="button" value="-" class="minus minus-btn" />
+                      <input
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        class="qty-text"
+                      /> -->
+                   <!--  <input type="button" value="+" class="plus plus-btn" />-->
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/croc.jpg" alt="product" />
+                  <div class="topOption">
+                   
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Premium Purple Crocs</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                     <!-- <input type="button" value="-" class="minus minus-btn" />
+                      <input
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        class="qty-text"
+                      />
+                      <input type="button" value="+" class="plus plus-btn" />
+                     --> </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="productBox">
+                <br><br><br><br><br>
+                <a href="" class="product-image">
+                  <img src="assets/images/sample/caul.jpeg" alt="product" />
+                  <div class="topOption">
+          <br><br><br><br><br>
+                    <span class="wishlist">
+                      <i class="uil uil-heart"></i>
+                    </span>
+                  </div>
+                </a>
+                <div class="product-detail">
+                  
+                  <h4>Black Causual Shoe</h4>
+                  <div class="price">&#8377;100 <span>&#8377;110</span></div>
+                  <div class="cartqt">
+                    <div class="quantity buttons_added">
+                
+                    <!--  <input type="button" value="-" class="minus minus-btn" />
+                      <input
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        class="qty-text"
+                      />
+                      <input type="button" value="+" class="plus plus-btn" /> -->
+                    </div>
+                    <div class="ct-icon">
+                      <i class="uil uil-shopping-cart-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="defaultPadding mt4 footer">
+      <div class="footer-row1">
+        <div class="container">
+          <div class="row flex">
+            <ul class="ul1">
+              <li>
+                <a href="#">
+                  <i class="uil uil-dialpad-alt"></i>
+                 233-000-000
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="uil uil-envelope-alt"></i>
+                  primemall@gmail.com
+                </a>
+              </li>
+            </ul>
+            <ul class="ul2">
+                <a href="#">
+                  <i class="uil uil-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="uil uil-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https=//wa.me/+233204647288" class = "whatsapp_float" target ="_blank">
+                  <i class="uil uil-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-row2">
+        <div class="container">
+          <div class="row">
+            <ul class="ul1">
+              <li class="heading">
+                <h4>Categories</h4>
+              </li>
+              <ul class="ul-sub">
+                <li>Phones</li>
+                <li>Cars</li>
+                <li>Home & Furniture</li>
+                <li>Fashion</li>
+                <li>Electronincs</li>
+                <li>Food Supplies</li>
+              </ul>
+            </ul>
+           <!-- <ul class="ul1">
+              <li class="heading">
+                <h4>Usefull Links</h4>
+              </li>
+              <ul class="ul-sub">
+                <li>Fruits and Vegetables</li>
+                <li>Dairy & Eggs</li>
+                <li>Beverages</li>
+                <li>Snacks</li>
+                <li>Snacks</li>
+                <li>Beverages</li>
+                <li>Snacks</li>
+              </ul>
+            </ul> 
+            <ul class="ul1">
+              <li class="heading">
+                <h4>Top Cities</h4>
+              </li>
+              <ul class="ul-sub">
+                <li>Fruits and Vegetables</li>
+                <li>Grocery & Staples</li>
+                <li>Snacks</li>
+                <li>Fruits and</li>
+                <li>Grocery & Staples</li>
+                <li>Dairy & Eggs</li>
+                <li>Beverages</li>
+                <li>Snacks</li>
+              </ul>
+            </ul>-->
+            <ul class="ul1">
+              <li class="heading">
+                <h4>Download App</h4>
+              </li>
+              <ul class="ul-sub da">
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/download-1.svg" alt="" />
+                  </a>
+                </li>
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/download-2.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <li class="heading thd">
+                <h4><b>Payment Mode</b></h4>
+              </li>
+              <ul class="ul-sub t flex">
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/pyicon-1.svg" alt="" />
+                  </a>
+                </li>
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/pyicon-2.svg" alt="" />
+                  </a>
+                </li>
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/pyicon-3.svg" alt="" />
+                  </a>
+                </li>
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/pyicon-4.svg" alt="" />
+                  </a>
+                </li>
+                <li class="dbnt">
+                  <a href="">
+                    <img src="assets/images/svg/pyicon-6.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <li class="heading thd">
+                <h4><b>News Letter</b></h4>
+              </li>
+              <ul class="ul-sub t flex nl">
+                <form action="#">
+                  <input type="text" name="" placeholder="Email Address" />
+                  <button><i class="uil uil-telegram-alt"></i></button>
+                </form>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+      var owl = $(".main-slider");
+      owl.owlCarousel({
+        items: 4,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
+          1400: {
+            items: 4,
+          },
+        },
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        dots: false,
+      });
+
+      $(".cate-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class='uil uil-angle-left'></i>",
+          "<i class='uil uil-angle-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 2,
+          },
+          375: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+          1200: {
+            items: 6,
+          },
+          1400: {
+            items: 6,
+          },
+        },
+      });
+
+      $(".product-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class='uil uil-angle-left'></i>",
+          "<i class='uil uil-angle-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          610: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+
+      $(window).on("load",function(){
+          $(".loader-wrapper").slideUp(4000);
+          $(".loader").slideUp(3000);
+          $(".ani").slideUp(3000);
+         
+        });
+    </script>
+  </body>
+</html>

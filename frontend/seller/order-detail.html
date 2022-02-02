@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="left-part" id="lft">
+        <div class="logo">
+          <a href="javascript:void(0)">
+            <img src="../assets/images/SortedGlobal (1).png" alt="logo" />
+          </a>
+          
+          <div class="close-left-nav" onclick="close_res_nav()">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
+        <div class="list-nav">
+          <ul class="nav-list">
+            <li class="outer-list">
+              <a href="index.html">
+                <i class="uil uil-estate"></i>
+                <span>Dashbaord</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="product.html">
+                <i class="uil uil-box"></i>
+                <span>Product</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_received.html">
+                <i class="uil uil-archive"></i>
+                <span>Order Received</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_assigned.html">
+                <i class="uil uil-parcel"></i>
+                <span>Order Assigned</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivery_c.html">
+                <i class="uil uil-voicemail-rectangle"></i>
+                <span>Delivery Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivered.html">
+                <i class="uil uil-gift"></i>
+                <span>Delivered</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="issue.html">
+                <i class="uil uil-toilet-paper"></i>
+                <span>Issue</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_setteled.html">
+                <i class="uil uil-bag"></i>
+                <span>Order Setteled</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered_c.html">
+                <i class="uil uil-channel"></i>
+                <span>Undeliver Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered.html">
+                <i class="uil uil-cube"></i>
+                <span>Undelivered</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Developed by Ask in city, Copyright@2021, All rights reserverd</p>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="head">
+          <div class="ham-name">
+            <div class="mnu vy" onclick="hide()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mnu ty" onclick="op_n()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="nm">Dashbord</div>
+          </div>
+          <div class="profile">
+            <a href="javascript:void(0)">
+              <img src="assets/images/pic1.jpg" alt="" />
+            </a>
+            <div class="name">
+              <span>Prime Mall Selle</span>
+              <small>seller</small>
+            </div>
+            <div class="hover-bot">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="uil uil-user"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="path">
+          <div class="container">
+            <a href="index.html">Home</a>
+            /
+            <a href="index.html">Orders</a>
+          </div>
+        </div>
+        <div class="cartrow" id="catrow">
+          <div class="gh">
+            <div class="pdpt-bg">
+              <div class="pdpt-title flex justify-between">
+                <h6>Order Id: OD7548DF878</h6>
+                <h6>Date: 12/12/12,  Time: 12:00:00</h6>
+              </div>
+              <div class="order-body10">
+                <ul class="order-dtsll">
+                  <li>
+                    <div class="order-dt-img">
+                      <img src="../assets/images/product/big-2.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="order-dt47">
+                      <h4>Gambo - Ludhiana</h4>
+                      <p>$12</p>
+                      <div class="order-title">Qty 2</div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="order-dtsll">
+                    <li>
+                      <div class="order-dt-img">
+                        <img src="../assets/images/product/big-2.jpg" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="order-dt47">
+                        <h4>Gambo - Ludhiana</h4>
+                        <p>$12</p>
+                        <div class="order-title">Qty 2</div>
+                      </div>
+                    </li>
+                  </ul>
+                <div class="total-dt">
+                  <div class="total-checkout-group">
+                    <div class="cart-total-dil">
+                      <h4>Sub Total</h4>
+                      <span>$25</span>
+                    </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Delivery Charges</h4>
+                      <span>Free</span>
+                    </div>
+                  </div>
+                  <div class="main-total-cart">
+                    <h2>Total</h2>
+                    <span>$25</span>
+                  </div>
+                </div>
+                <div class="track-order">
+                    <span class="badge ofd"> Out for Delivery </span>
+                </div>
+              </div>
+            </div>
+            <div class="pdpt-bg">
+              <div class="pdpt-title flex justify-between">
+                <h4>Delivery Address</h4>
+              </div>
+              <div class="order-body10">
+                <div class="total-dt">
+                  <div class="total-checkout-group bt0">
+                    <div class="cart-total-dil">
+                      <h4>Name</h4>
+                      <span>Ayondip Jana</span>
+                    </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Email</h4>
+                      <span>ayondip2001@gmail.com</span>
+                    </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Phone</h4>
+                      <span>7407287858</span>
+                    </div>
+                    <div class="cart-total-dil pt-3">
+                      <h4>Address</h4>
+                      <span>gamariya bus stand, anandapur, medinipur,721122</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

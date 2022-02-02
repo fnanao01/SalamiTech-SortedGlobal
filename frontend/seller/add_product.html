@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="left-part" id="lft">
+        <div class="logo">
+          <a href="javascript:void(0)">
+            <img src="../assets/images/SortedGlobal (1).png" alt="logo" />
+          </a>
+          
+          <div class="close-left-nav" onclick="close_res_nav()">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
+        <div class="list-nav">
+          <ul class="nav-list">
+            <li class="outer-list">
+              <a href="index.html">
+                <i class="uil uil-estate"></i>
+                <span>Dashbaord</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="product.html">
+                <i class="uil uil-box"></i>
+                <span>Product</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_received.html">
+                <i class="uil uil-archive"></i>
+                <span>Order Received</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_assigned.html">
+                <i class="uil uil-parcel"></i>
+                <span>Order Assigned</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivery_c.html">
+                <i class="uil uil-voicemail-rectangle"></i>
+                <span>Delivery Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivered.html">
+                <i class="uil uil-gift"></i>
+                <span>Delivered</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="issue.html">
+                <i class="uil uil-toilet-paper"></i>
+                <span>Issue</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_setteled.html">
+                <i class="uil uil-bag"></i>
+                <span>Order Setteled</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered_c.html">
+                <i class="uil uil-channel"></i>
+                <span>Undeliver Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered.html">
+                <i class="uil uil-cube"></i>
+                <span>Undelivered</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="head">
+          <div class="ham-name">
+            <div class="mnu vy" onclick="hide()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mnu ty" onclick="op_n()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="nm">Dashbord</div>
+          </div>
+          <div class="profile">
+            <a href="javascript:void(0)">
+              <img src="assets/images/pic1.jpg" alt="" />
+            </a>
+            <div class="name">
+              <span>Prime Mall Seller</span>
+              <small>seller</small>
+            </div>
+            <div class="hover-bot">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="uil uil-user"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="path">
+          <div class="container">
+            <a href="index.html">Home</a>
+            /
+            <a href="index.html">product</a>
+            /
+            <a href="index.html">add product</a>
+          </div>
+        </div>
+        <div class="cartrow" id="catrow">
+          <div class="gh">
+            <div class="heading">
+              <h3>Add product</h3>
+            </div>
+            <div class="maincontainer2">
+              <form action="#">
+                <div class="formrow">
+                  <div class="heading">Category</div>
+                  <select name="" id="">
+                    <option value="">select category</option>
+                    <option value="">select category</option>
+                    <option value="">select category</option>
+                    <option value="">select category</option>
+                  </select>
+                </div>
+                <div class="formrow">
+                  <div class="heading">Sub-category</div>
+                  <select name="" id="">
+                    <option value="">select sub-category</option>
+                    <option value="">select category</option>
+                    <option value="">select category</option>
+                    <option value="">select category</option>
+                  </select>
+                </div>
+                <div class="formrow">
+                  <div class="heading">Name</div>
+                  <input type="number" placeholder="Enter Product Name *" />
+                </div>
+
+                <div class="formrow">
+                  <div class="heading">Price</div>
+                  <input type="number" placeholder="Enter Product Price *" />
+                </div>
+                <div class="formrow">
+                  <div class="heading">Selling Price</div>
+                  <input
+                    type="number"
+                    placeholder="Enter Product Selling Price *"
+                  />
+                </div>
+                <div class="formrow">
+                  <div class="heading">Tax</div>
+                  <input type="number" placeholder="Enter Product Tax *" />
+                </div>
+                <div class="formrow">
+                  <div class="heading">Final Price</div>
+                  <input type="number" placeholder="0.00" readonly />
+                </div>
+                <div class="formrow">
+                  <div class="heading">SKU</div>
+                  <input type="number" placeholder="ADE784R" readonly />
+                </div>
+                <div class="formrow">
+                  <div class="heading">Quantity</div>
+                  <input type="number" placeholder="Enter Product Quantity *" />
+                </div>
+                <div class="formrow f">
+                  <div class="heading">Terms & Condition</div>
+                  <textarea name="" id="" placeholder="Enter T&C"></textarea>
+                </div>
+                <div class="formrow f">
+                  <div class="heading">Short Description</div>
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Enter Short Description"
+                  ></textarea>
+                </div>
+                <div class="formrow f">
+                  <div class="heading">Description</div>
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Enter Description"
+                  ></textarea>
+                </div>
+                <div class="formrow ig">
+                  <div class="imgdiv">
+                    <div class="img">
+                      <img
+                        src="../assets/images/product/big-2.jpg"
+                        alt=""
+                        id="preview1"
+                      />
+                    </div>
+                    <div class="file">
+                      <label for="uploadimage1">
+                        Browse
+                        <input
+                          type="file"
+                          name="productimage1"
+                          id="uploadimage1"
+                          onchange="show_preview('preview1','uploadimage1')"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="imgdiv">
+                    <div class="img">
+                      <img
+                        src="../assets/images/product/big-2.jpg"
+                        alt=""
+                        id="preview2"
+                      />
+                    </div>
+                    <div class="file">
+                      <label for="uploadimage2">
+                        Browse
+                        <input
+                          type="file"
+                          name="productimage2"
+                          id="uploadimage2"
+                          onchange="show_preview('preview2','uploadimage2')"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="imgdiv">
+                    <div class="img">
+                      <img
+                        src="../assets/images/product/big-2.jpg"
+                        alt=""
+                        id="preview3"
+                      />
+                    </div>
+                    <div class="file">
+                      <label for="uploadimage3">
+                        Browse
+                        <input
+                          type="file"
+                          name="productimage3"
+                          id="uploadimage3"
+                          onchange="show_preview('preview3','uploadimage3')"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="imgdiv">
+                    <div class="img">
+                      <img
+                        src="../assets/images/product/big-2.jpg"
+                        alt=""
+                        id="preview4"
+                      />
+                    </div>
+                    <div class="file">
+                      <label for="uploadimage4">
+                        Browse
+                        <input
+                          type="file"
+                          name="productimage4"
+                          id="uploadimage4"
+                          onchange="show_preview('preview4','uploadimage4')"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="formrow">
+                  <a href="javascript:void(0)" class="btn d-flex-center-a-j bg-main br-15">
+                    <i class="uil uil-plus"></i>
+                    <span>Add</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

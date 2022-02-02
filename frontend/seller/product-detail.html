@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="left-part" id="lft">
+        <div class="logo">
+          <a href="javascript:void(0)">
+            <img src="../assets/images/SortedGlobal (1).png" alt="logo" />
+          </a>
+         
+          <div class="close-left-nav" onclick="close_res_nav()">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
+        <div class="list-nav">
+          <ul class="nav-list">
+            <li class="outer-list">
+              <a href="index.html">
+                <i class="uil uil-estate"></i>
+                <span>Dashbaord</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="product.html">
+                <i class="uil uil-box"></i>
+                <span>Product</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_received.html">
+                <i class="uil uil-archive"></i>
+                <span>Order Received</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_assigned.html">
+                <i class="uil uil-parcel"></i>
+                <span>Order Assigned</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivery_c.html">
+                <i class="uil uil-voicemail-rectangle"></i>
+                <span>Delivery Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="delivered.html">
+                <i class="uil uil-gift"></i>
+                <span>Delivered</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="issue.html">
+                <i class="uil uil-toilet-paper"></i>
+                <span>Issue</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="order_setteled.html">
+                <i class="uil uil-bag"></i>
+                <span>Order Setteled</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered_c.html">
+                <i class="uil uil-channel"></i>
+                <span>Undeliver Confirmation</span>
+              </a>
+            </li>
+            <li class="outer-list">
+              <a href="undelivered.html">
+                <i class="uil uil-cube"></i>
+                <span>Undelivered</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Developed by Ask in city, Copyright@2021, All rights reserverd</p>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="head">
+          <div class="ham-name">
+            <div class="mnu vy" onclick="hide()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mnu ty" onclick="op_n()" id="mn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="nm">Dashbord</div>
+          </div>
+          <div class="profile">
+            <a href="javascript:void(0)">
+              <img src="assets/images/pic1.jpg" alt="" />
+            </a>
+            <div class="name">
+              <span>jhon</span>
+              <small>seller</small>
+            </div>
+            <div class="hover-bot">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="uil uil-user"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="path">
+          <div class="container">
+            <a href="index.html">Home</a>
+            /
+            <a href="index.html">Product</a>
+            /
+            <a href="index.html">product detail</a>
+          </div>
+        </div>
+        <div class="cartrow" id="catrow">
+          <div class="gh">
+            <section class="single-product">
+              <div class="row">
+                <div class="container">
+                  <div class="innerrow">
+                    <div class="left">
+                      <div class="mainImage">
+                        <img
+                          src="../assets/images/product/big-1.jpg"
+                          alt=""
+                          id="mi"
+                        />
+                      </div>
+                      <div class="subimages flex">
+                        <div class="sub">
+                          <img
+                            src="../assets/images/product/big-2.jpg"
+                            alt=""
+                            onclick="view(this)"
+                          />
+                        </div>
+                        <div class="sub">
+                          <img
+                            src="../assets/images/product/big-1.jpg"
+                            alt=""
+                            onclick="view(this)"
+                          />
+                        </div>
+                        <div class="sub">
+                          <img
+                            src="../assets/images/product/big-3.jpg"
+                            alt=""
+                            onclick="view(this)"
+                          />
+                        </div>
+                        <div class="sub">
+                          <img
+                            src="../assets/images/product/big-4.jpg"
+                            alt=""
+                            onclick="view(this)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <h2 class="mt2">Grape fruit turkey</h2>
+                      <div class="no-stock">
+                        <p class="pd-no">Product No.<span>12345</span></p>
+                        <p class="stock-qty">Quantity<span>10</span></p>
+                      </div>
+                      <p class="pp-descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam vulputate, purus at tempor blandit, nulla felis
+                        dictum eros, sed volutpat odio sapien id lectus. Cras
+                        mollis massa ac congue posuere. Fusce viverra mauris vel
+                        magna pretium aliquet. Nunc tincidunt, velit id tempus
+                        tristique, velit dolor hendrerit nibh, at scelerisque
+                        neque mauris sed ex.
+                      </p>
+                      <div class="product-group-dt">
+                        <ul>
+                          <li>
+                            <div class="main-price color-discount">
+                              Discount Price<span>&#8377;15</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="main-price mrp-price">
+                              MRP Price<span>&#8377;18</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul>
+                            <li>
+                              <div class="main-price mt-2">
+                                Tax<span>18%</span>
+                              </div>
+                            </li>
+                          </ul>
+                        <ul class="ordr-crt-share">
+                          <li>
+                            <button class="order-btn hover-btn"> <i class="uil uil-pen"></i> Edit</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="secondrow">
+                    <div class="innerrow">
+                      <div class="alldesc">
+                        <div class="container">
+                          <div class="heading">
+                            <h4>Product details</h4>
+                          </div>
+                          <div class="desc-body">
+                            <div class="pdct-dts-1">
+                              <div class="pdct-dt-step">
+                                <h4>Description</h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Pellentesque posuere nunc in
+                                  condimentum maximus. Integer interdum sem
+                                  sollicitudin, porttitor felis in, mollis quam.
+                                  Nunc gravida erat eu arcu interdum eleifend.
+                                  Cras tortor velit, dignissim sit amet
+                                  hendrerit sed, ultricies eget est. Donec eget
+                                  urna sed metus dignissim cursus.
+                                </p>
+                              </div>
+                              <div class="pdct-dt-step">
+                                <h4>Benefits</h4>
+                                <div class="product_attr">
+                                  Aliquam nec nulla accumsan, accumsan nisl in,
+                                  rhoncus sapien.<br />
+                                  In mollis lorem a porta congue.<br />
+                                  Sed quis neque sit amet nulla maximus
+                                  dignissim id mollis urna.<br />
+                                  Cras non libero at lorem laoreet finibus vel
+                                  et turpis.<br />
+                                  Mauris maximus ligula at sem lobortis
+                                  congue.<br />
+                                </div>
+                              </div>
+                              <div class="pdct-dt-step">
+                                <h4>How to Use</h4>
+                                <div class="product_attr">
+                                  The peeled, orange segments can be added to
+                                  the daily fruit bowl, and its juice is a
+                                  refreshing drink.
+                                </div>
+                              </div>
+                              <div class="pdct-dt-step">
+                                <h4>Seller</h4>
+                                <div class="product_attr">
+                                  Gambolthemes Pvt Ltd, Sks Nagar, Near Mbd
+                                  Mall, Ludhana, 141001
+                                </div>
+                              </div>
+                              <div class="pdct-dt-step">
+                                <h4>Disclaimer</h4>
+                                <p>
+                                  Phasellus efficitur eu ligula consequat
+                                  ornare. Nam et nisl eget magna aliquam
+                                  consectetur. Aliquam quis tristique lacus.
+                                  Donec eget nibh et quam maximus rutrum eget ut
+                                  ipsum. Nam fringilla metus id dui
+                                  sollicitudin, sit amet maximus sapien
+                                  malesuada.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
