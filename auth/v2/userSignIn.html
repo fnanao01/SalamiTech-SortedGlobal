@@ -4,8 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Register</title>
-    <link href="./lgcss/style.css" rel="stylesheet" />
+    <title>SortedGlobal | SignIn</title>
+    <link href="../lgcss/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body class="vh-100">
     <div class="authincation h-100">
@@ -19,36 +23,20 @@
                     <div class="text-center mb-3">
                       <img
                         style="height: 5rem"
-                        src="../assets/images/Prime mall.png"
+                        src="SortedGlobal (1).png"
                         alt=""
                       />
                     </div>
-                    <h4 class="text-center mb-4">Sign up your account</h4>
+                    <h4 class="text-center mb-4">Sign Into your account</h4>
                     <div class="form-group">
-                      <label class="mb-1"><strong>Name</strong></label>
+                      <label class="mb-1"
+                        ><strong>Email or Mobile</strong></label
+                      >
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Your Name"
-                        id="name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label class="mb-1"><strong>Email</strong></label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="hello@example.com"
-                        id="email"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label class="mb-1"><strong>Mobile</strong></label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="Mobile"
-                        id="mobile"
+                        placeholder="Email or Mobile"
+                        id="username"
                       />
                     </div>
                     <div class="form-group">
@@ -66,15 +54,15 @@
                         type="submit"
                         class="btn btn-primary btn-block btn-main"
                         style="background-color: #864ad1; border: 0"
-                        onclick="register()"
+                        onclick="login()"
                       >
-                        Register
+                        Login
                       </button>
                     </div>
                     <div class="new-account mt-3">
                       <p>
-                        Already have an account?
-                        <a style="color: #864ad1" href="v2/">Sign in</a>
+                        New Here?
+                        <a href="/auth/userSignUp.html" style="color: #864ad1">Create Account</a>
                       </p>
                     </div>
                   </div>
@@ -85,8 +73,8 @@
         </div>
       </div>
     </div>
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/sweetalert.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/sweetalert.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>

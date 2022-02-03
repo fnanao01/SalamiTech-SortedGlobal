@@ -261,7 +261,7 @@ i {
 }
 
 .main-banner-slider .container .row .owl-carousel .item {
-  background-color: #fff;
+  background-color: rgb(105, 38, 38);
   padding: 0.6rem;
   border-radius: 5px;
   position: relative;
@@ -493,7 +493,7 @@ i {
 
 .header {
   position: relative;
-  z-index: -2;
+  z-index: 1;
   width: 100%;
   background: #fff;
   padding: 0.3rem 0;
@@ -2024,6 +2024,7 @@ section .container .product-slider .owl-nav .owl-prev {
   color: #3e3f5e;
   line-height: 26px;
   text-align: left;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1192px) {
