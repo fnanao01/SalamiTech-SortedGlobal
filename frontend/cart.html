@@ -9,9 +9,7 @@
       href="assets/images/logo.png"
       type="image/x-icon"
     />
-    <title>Cart
-
-    </title>
+    <title>Cart</title>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sweetalert.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,8 +19,17 @@
     />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <script src="https://kit.fontawesome.com/257de68655.js" crossorigin="anonymous"></script>
+   
   </head>
   <body>
+    <!---
+    <div class="loader-wrapper">
+      <h1 class="ani" style="color:white; letter-spacing: 1px; font-size:40px;"><span style="color: papayawhip;">Welcome to</span><span style="color: rgb(230, 190, 117);"> SortedGlobal</span></h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div> -->
+
     <div class="responsive-search" id="rss">
       <div class="closediv">
         <i class="uil uil-times" onclick="closerss()"></i>
@@ -45,7 +52,7 @@
         </div>
       </div>
     </div>
-    <header class="header">
+    <header class="header" style="background-color: rgba(243, 239, 239, 0.89)">
       <div class="top-header">
         <div class="th">
           <div class="logo">
@@ -60,8 +67,7 @@
           
           <div class="searchbox">
             <span>
-              <i class="uil uil-create-dashboard" onclick="show_cat()"></i>
-              <i class="uil uil-angle-down icon__14" onclick="show_cat()"></i>
+             
             </span>
             <form action="index.html" method="GET">
               <input type="hidden" value="14" name="d" />
@@ -70,40 +76,7 @@
                 <i class="uil uil-search"></i>
               </button>
             </form>
-            <div class="location fadeup" id="ctcnpnl">
-              <input
-                type="text"
-                placeholder="Search here"
-                id="cat_search"
-                oninput="search_cat()"
-              />
-              <ul>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Cars</a>
-                </li>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Food Supplies</a>
-                </li>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Phones</a>
-                </li>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Fashion</a>
-                </li>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Home and Furniture</a>
-                </li>
-                <li onclick="set(this)">
-                  <i class="uil uil-apps"></i>
-                  <a href="" class="cn-search">Electronics</a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
           <div class="rightbox">
             <ul>
@@ -180,7 +153,209 @@
           </div>
         </div>
       </div>
+
+<div class="upcategories">
+
+
+      <div class="mens">
+        <div class="dropdown" data-dropdown>
+          <button class="newcart" data-dropdown-button>
+           <i class="fa-solid fa-bus"></i>&nbsp&nbspTransport Services</button>
+          <div class="dropdown-menu information-grid">
+                  <div class="innercat">
+                   <h2.>Private Transport Services</h2.> 
+                   <div class="innerlinks">
+                   <a href="#">Mediteranian Convoy</a>
+                   <a href="#">Soir Pacific</a>
+                   <a href="#">Celtic Mange</a>
+                   <a href="#">Express Flight</a>
+                   <a href="#">Emirates Classic</a>
+                   </div>
+                  </div>
+
+                  <div class="innercat">
+                    <h2.>Commercial Transport Services</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Aboboya</a>
+                    <a href="#">Ayaalooo</a>
+                    <a href="#">Pragya</a>
+                    </div>
+                   </div>
+
+                   <div class="innercat">
+                    <h2.>Drivers</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Uber</a>
+                    <a href="#">Yango</a>
+                    <a href="#">Denim Ride</a>
+                    </div>
+                   </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="mens">
+        <div class="dropdown" data-dropdown>
+          <button class="newcart" data-dropdown-button>
+            
+            <i class="fa-solid fa-hotel"></i>&nbsp&nbspRecreation & Leisure</button>
+          <div class="dropdown-menu information-grid">
+                  <div class="innercat">
+                   <h2.>Restaurants</h2.> 
+                   <div class="innerlinks">
+                   <a href="#">KFC</a>
+                   <a href="#">Papaye</a>
+                   <a href="#">McDonalds</a>
+                   <a href="#">Chick-FIL-A</a>
+                   <a href="#">Planet Kebab</a>
+                   </div>
+                  </div>
+
+                  <div class="innercat">
+                    <h2.>Hotels</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Labadi Beach Hotel</a>
+                    <a href="#">Kempiski Ghana Hotel</a>
+                    <a href="#">Golden City Hotel</a>
+                    </div>
+                   </div>
+
+                   <div class="innercat">
+                    <h2.>Pubs</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Eppo's Sports Pub</a>
+                    <a href="#">Purple Pub</a>
+                    <a href="#">Calabash Pub</a>
+                    </div>
+                   </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="mens">
+        <div class="dropdown" data-dropdown>
+          <button class="newcart" data-dropdown-button>
+            
+            <i class="fa-solid fa-bag-shopping"></i>&nbsp&nbspBags & Shoes</button>
+          <div class="dropdown-menu information-grid">
+                  <div class="innercat">
+                   <h2.>Men's Shoes</h2.> 
+                   <div class="innerlinks">
+                   <a href="#">Sneakers</a>
+                   <a href="#">Causuals</a>
+                   <a href="#">Sandals</a>
+                   <a href="#">Half-Shoes</a>
+                   <a href="#">Office</a>
+                   </div>
+                  </div>
+
+                  <div class="innercat">
+                    <h2.>Womens's FootWare</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Flats</a>
+                    <a href="#">Heels</a>
+                    <a href="#">Sneakers</a>
+                    </div>
+                   </div>
+
+                   <div class="innercat">
+                    <h2.>Mens's Baggage</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Wallets</a>
+                    </div>
+                   </div>
+
+                   <div class="innercat">
+                    <h2.>Womens's Baggage</h2.> 
+                    <div class="innerlinks">
+                    <a href="#">Purses</a>
+                    <a href="#">Office Bags</a>
+                    <a href="#">Denim Bags</a>
+                    </div>
+                   </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="mens">
+        <div class="dropdown" data-dropdown>
+          <button class="newcart" data-dropdown-button><i class="fa-solid fa-plug"></i>&nbsp&nbspTechnicals</button>
+          <div class="dropdown-menu information-grid">
+                  <div class="innercat">
+                   <h2.>Technicals</h2.> 
+                   <div class="innerlinks">
+                   <a href="#">Electrical Repairs</a>
+                   <a href="#">Construction</a>
+                   <a href="#">Car Repair Services</a>
+                   </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mens">
+        <div class="dropdown" data-dropdown>
+          <button class="newcart" data-dropdown-button><i class="fa-solid fa-laptop"></i>&nbsp&nbspComputers & Home Appliances</button>
+          <div class="dropdown-menu information-grid">
+                  <div class="innercat">
+                   <h2.>Desktops</h2.> 
+                   
+                   <div class="innerlinks">
+                   <a href="#">Dell</a>
+                   <a href="#">Toshiba</a>
+                   <a href="#">Alien Ware</a>
+                   </div>
+                  </div>
+
+                  <div class="innercat">
+                    <h2.>Laptops</h2.> 
+                    
+                    <div class="innerlinks">
+                    <a href="#">Mini Laptops</a>
+                    <a href="#">Gaming Laptops</a>
+                    <a href="#">Office Laptops</a>
+                    </div>
+                   </div>
+
+                   <div class="innercat">
+                    <h2.>Monitors</h2.> 
+                    
+                    <div class="innerlinks">
+                    <a href="#">CRT</a>
+                    <a href="#">Plasma Screens</a>
+                    <a href="#">LCD's</a>
+                    </div>
+                   </div>
+
+                   
+          </div>
+        </div>
+      </div>
+
+</div>
+</div>
+     
     </header>
+   
     <div class="slider" id="sidebar">
       <ul>
         <li class="flex flex-center"><a href=""> Home </a></li>

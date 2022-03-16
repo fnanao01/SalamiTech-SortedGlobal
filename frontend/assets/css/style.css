@@ -14,12 +14,103 @@ html {
 }
 
 body {
-  background-color: #f8f4f4;
+  background-color:rgb(177, 172, 172);
+  background-image: url("");
+  background-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  background-size: contain;
   margin: 0;
   padding: 0;
-  width:100vw;
-  height: 100vh;
+  
 }
+
+
+
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  left:0%;
+  top: calc(100% + .5rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,.3);
+  border-radius:5px;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, tansform 150ms ease-in-out;
+}
+
+
+.dropdown > .newcart:focus + .dropdown-menu{
+  opacity:1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.upcategories{
+  position:absolute;
+  top:95px;
+  margin:auto;
+}
+
+.mens{
+display: inline-block;
+margin-left: 1rem;
+
+}
+
+button.newcart{
+width:inherit;
+height:40px;
+font-size: 1.5rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border-radius:4px;
+margin:auto;
+
+min-height:47px;
+}
+
+.innercat{
+font-weight:bold;
+font-size: 2rem;
+text-decoration: none;
+}
+
+
+.information-grid{
+  
+  grid-template-columns: repeat(3, max-content);
+ display:-ms-grid;
+ display:grid;
+  gap: 9rem;
+}
+
+.innerlinks{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+  font-size: 1.6rem;
+}
+
+.innerlinks a:hover{
+  color:rgb(148, 116, 58);
+}
+
+
+
+
+
 .content {
   display: flex;
   justify-content: center;
@@ -29,7 +120,100 @@ body {
   
 }
 
+section.listing-shoe, .listing-furniture, .listing-trans, .listing-pub{
+      
+      min-height: 80%;
+      max-width: 100%;
+      width:95%;
+      margin-left: 70px;
+      box-shadow: 0px 2px 0px 0.9 rgb(245, 190, 145);
+      border-radius: 9px;
+      background-color: rgba(214, 206, 202, 0.9);
+}
 
+
+.prodcont{
+   max-height: 100%;
+   max-width: 17%;
+   width:300px;
+   height:300px;
+   box-shadow: -3px -2px 40px rgb(150, 148, 145);
+   border-radius: 9px;
+   display: inline-block;
+   margin-left: 40px;
+}
+
+.prodpic, .prodpic-1, .prodpic-2, .prodpic-3, .prodpic-4, .prodpic-5, .prodpic-6, .prodpic-7, .prodpic-8, .prodpic-9{
+   height:400px;
+   width:100%;
+  
+   background-size:contain;
+   background-repeat: no-repeat;
+   
+}
+
+.prodpic-1{
+  background-image: url(""); 
+  
+}
+
+.prodpic-2{
+  background-image: url("");   
+}
+
+.prodpic-3{
+  background-image: url("");   
+}
+
+.prodpic-4{
+  background-image: url("");
+}
+
+.prodpic-5{
+  background-image: url("");
+}
+
+.prodpic-6{
+  background-image: url("");
+}
+
+.prodpic-7{
+  background-image: url("");
+}
+
+.prodpic-8{
+  background-image: url("");
+}
+
+.prodpic-9{
+  background-image: url("");
+}
+
+
+
+span.description{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  position:relative;
+  top:-50px;
+  padding-left:20px;
+}
+
+button.cart{
+ position: relative;
+ right: -50px;
+ left:20px;
+ top:-30px;
+ 
+}
+
+h2.description{
+  position: relative;
+  left:39px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  padding-top:90px;
+}
 
 .loader-wrapper {
   width: 100%;
@@ -76,6 +260,109 @@ body {
   75% { height: 100%;}
   100% { height: 0%;}
 }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease-out;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
 
 input,
 select {
@@ -145,6 +432,7 @@ i {
 
 .mt4 {
   margin-top: 4rem;
+  margin-buttom: 3em;
 }
 
 .mt3 {
@@ -161,6 +449,7 @@ i {
 
 .mrlAuto {
   margin: 0.1rem auto;
+  
 }
 
 @media only screen and (max-width: 1196px) {
