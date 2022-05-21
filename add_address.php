@@ -10,7 +10,7 @@ authorise_user2();
         /
         <a href="address.php">My Address</a>
         /
-        <a href="add_address.php">Add Address</a>
+        <a href="add_address.php">Add Home Address</a>
     </div>
 </div>
 <section class="newaddress">
